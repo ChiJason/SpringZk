@@ -1,0 +1,46 @@
+<?page title="Index" contentType="text/html;charset=UTF-8"?>
+<?variable-resolver class="org.zkoss.zkplus.spring.DelegatingVariableResolver"?>
+
+<zk>
+	<window id="win_1" title="SpringZkDemo" height="100%" width="100%" 
+			sizable="true" mode="modal" contentStyle="background:lightyellow"
+			apply="com.jason.SpringZk.ZkController">
+			
+		<tabbox>
+			<tabs>
+	            <tab label="Tab 1" />
+	            <tab label="Tab 2" />
+	        </tabs>
+	        <tabpanels>
+	            <tabpanel>
+	          <div>
+				<label id="sayhi" style="color:blue"/>
+			</div>
+	
+		<hbox>
+			<vbox>
+				<intbox id="intbox_1" style="text-align: right;"/>
+				<div>
+					<label id="label_1" value="Answer" style="color:gray"/>
+				</div>
+			</vbox>
+			<vbox>
+				<button id="add" label="+"/>
+				<button id="multiple" label="x"/>
+			</vbox>
+			<vbox>
+				<button id="minus" label="-"/>
+				<button id="divided" label="/"/>
+			</vbox>	
+			<button id="result" label="c"/>
+		</hbox>
+	            </tabpanel>
+	            <tabpanel>
+	            	<include id="tab2win" src="index1.zul"/>
+	            </tabpanel>
+	        </tabpanels>
+		</tabbox>
+	
+	
+	</window>
+</zk>

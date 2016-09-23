@@ -1,0 +1,18 @@
+<?page title="HiPage" contentType="text/html;charset=UTF-8"?>
+<zk>
+	<window id="win_2">
+	<menubar>
+ <menu label="File">
+     <menupopup>
+         <menuitem label="New"/>
+         <menuseparator/>
+         <menuitem label="Exit"/>
+     </menupopup>
+ </menu>
+</menubar>
+			<hlayout>
+	    	<calendar id="cal" weekOfYear="true"/>
+			</hlayout>
+	</window>
+
+</zk>
