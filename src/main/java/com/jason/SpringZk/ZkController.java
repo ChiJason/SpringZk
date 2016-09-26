@@ -17,7 +17,6 @@ import org.zkoss.zul.Window;
 public class ZkController extends SelectorComposer<Component> {
 	
 	private SayHello sayHello;
-	private Tab2 myTab2;
 	@Wire
 	private Button add, minus, multiple, divided, result;
 	@Wire
@@ -41,15 +40,9 @@ public class ZkController extends SelectorComposer<Component> {
 		count = sayHello.getCount();
 		sayhi.setValue(sayHello.getMessage());
 		
-		Include include = (Include) win_1.getFellow("tab2win");
-		Window win_2 = (Window) include.getFellow("win_2");
-		
-		myTab2 = (Tab2) context.getBean("bean1");
-		win_2.setTitle(myTab2.getDate().toString());
-		
 	}
 	
-	@Listen("onClick= #add, #minus, #multiple, #divided, #result")
+	@Listen("onClick= #add, #minus, #multiple, #divided, #result, #next")
 	public void answer(MouseEvent event){
 		
 		switch (event.getTarget().getId()) {
@@ -80,6 +73,7 @@ public class ZkController extends SelectorComposer<Component> {
 		case "result":
 			count = 0;
 			label_1.setValue(count.toString());
+			
 		default:
 			break;
 		}

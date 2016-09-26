@@ -1,18 +1,14 @@
 <?page title="HiPage" contentType="text/html;charset=UTF-8"?>
+<?variable-resolver class="org.zkoss.zkplus.spring.DelegatingVariableResolver"?>
+
 <zk>
-	<window id="win_2">
-	<menubar>
- <menu label="File">
-     <menupopup>
-         <menuitem label="New"/>
-         <menuseparator/>
-         <menuitem label="Exit"/>
-     </menupopup>
- </menu>
-</menubar>
-			<hlayout>
-	    	<calendar id="cal" weekOfYear="true"/>
-			</hlayout>
-	</window>
+<vlayout apply="com.jason.SpringZk.Tab2Controller">
+	<div>
+	<label id="l1" style="color:blue"/>
+</div>
+<div>
+	<calendar id="cal" width="25%"/>
+</div>
+</vlayout>
 
 </zk>
