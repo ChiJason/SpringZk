@@ -21,6 +21,38 @@
          <property name="date"> 
             <bean id="dateBean" class="java.util.Date"/>
         </property>
+        <property name="usersArray">
+            <list>
+                <ref bean="user1"/>
+                <ref bean="user2"/>
+                <ref bean="user3"/>
+            </list>
+        </property>
     </bean>
+    
+      <bean id="user1" class="com.jason.SpringZk.Users">
+          <constructor-arg type="java.lang.String">
+              <value>AA</value>
+          </constructor-arg>
+          <constructor-arg type="java.lang.Integer">
+              <value>11</value>
+          </constructor-arg>
+      </bean>
+       <bean id="user2" class="com.jason.SpringZk.Users">
+          <constructor-arg type="java.lang.String">
+              <value>BB</value>
+          </constructor-arg>
+          <constructor-arg type="java.lang.Integer">
+              <value>22</value>
+          </constructor-arg>
+      </bean>
+       <bean id="user3" class="com.jason.SpringZk.Users">
+          <constructor-arg type="java.lang.String">
+              <value>CC</value>
+          </constructor-arg>
+          <constructor-arg type="java.lang.Integer">
+              <value>33</value>
+          </constructor-arg>
+      </bean>
     
  </beans>

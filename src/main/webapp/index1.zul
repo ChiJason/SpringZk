@@ -2,13 +2,38 @@
 <?variable-resolver class="org.zkoss.zkplus.spring.DelegatingVariableResolver"?>
 
 <zk>
-<vlayout apply="com.jason.SpringZk.Tab2Controller">
+<hlayout id="h1" apply="com.jason.SpringZk.Tab2Controller">
+	<vlayout>
+		<div>
+		<label id="l1" style="color:blue"/>
+	</div>
 	<div>
-	<label id="l1" style="color:blue"/>
-</div>
-<div>
-	<calendar id="cal" width="25%"/>
-</div>
-</vlayout>
+		<calendar id="cal" width="25%"/>
+	</div>
+	</vlayout>
+	
+	<listbox id="mylb" model="${h1$composer.listbox}" width="500px" rows="5">
+		<listhead sizable="true">
+			<listheader label="name" align="center" sort="auto" />
+			<listheader label="age" align="center" sort="auto"/>
+		</listhead>
+		<template name="model">
+		<listitem>
+			<listcell label="${each.name}"/>
+			<listcell label="${each.age}"/>		
+		</listitem>
+		</template>
+		
+		<listfoot>
+            <listfooter>
+                <label value="This is footer1" />
+            </listfooter>
+            <listfooter>
+                <label value="This is footer2" />
+            </listfooter>
+        </listfoot>
+	</listbox>
+</hlayout>
+
 
 </zk>

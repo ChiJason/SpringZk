@@ -3,7 +3,7 @@
 
 <zk>
 	<window id="win_1" title="SpringZkDemo" height="100%" width="100%" 
-			sizable="true" mode="modal" contentStyle="background:lightyellow"
+			sizable="true" contentStyle="background:lightyellow"
 			apply="com.jason.SpringZk.ZkController">
 			
 		<tabbox>

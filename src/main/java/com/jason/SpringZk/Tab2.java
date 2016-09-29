@@ -6,6 +6,7 @@ public class Tab2 {
 	
 	private String tb2Message;
 	private Date date;
+	private Users[] usersArray;
 	
 	public Tab2(String message){
 		this.tb2Message = message;
@@ -25,5 +26,13 @@ public class Tab2 {
 
 	public void setDate(Date date) {
 		this.date = date;
+	}
+
+	public Users[] getUsersArray() {
+		return usersArray;
+	}
+
+	public void setUsersArray(Users[] usersArray) {
+		this.usersArray = usersArray;
 	}
 }
