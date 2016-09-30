@@ -12,24 +12,17 @@
 	</div>
 	</vlayout>
 	
-	<listbox id="mylb" model="${h1$composer.listbox}" width="500px" rows="5">
+	<listbox id="mylb" width="500px" rows="5">
 		<listhead sizable="true">
 			<listheader label="name" align="center" sort="auto" />
 			<listheader label="age" align="center" sort="auto"/>
 		</listhead>
-		<template name="model">
-		<listitem>
-			<listcell label="${each.name}"/>
-			<listcell label="${each.age}"/>		
-		</listitem>
-		</template>
-		
 		<listfoot>
             <listfooter>
-                <label value="This is footer1" />
+                <label value="String" />
             </listfooter>
             <listfooter>
-                <label value="This is footer2" />
+                <label value="Integer" />
             </listfooter>
         </listfoot>
 	</listbox>

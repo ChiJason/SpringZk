@@ -26,6 +26,11 @@
                 <ref bean="user1"/>
                 <ref bean="user2"/>
                 <ref bean="user3"/>
+                <ref bean="user4"/>
+                <ref bean="user5"/>
+                <ref bean="user6"/>
+                <ref bean="user7"/>
+                <ref bean="user8"/>
             </list>
         </property>
     </bean>
@@ -52,6 +57,46 @@
           </constructor-arg>
           <constructor-arg type="java.lang.Integer">
               <value>33</value>
+          </constructor-arg>
+      </bean>
+      <bean id="user4" class="com.jason.SpringZk.Users">
+          <constructor-arg type="java.lang.String">
+              <value>DD</value>
+          </constructor-arg>
+          <constructor-arg type="java.lang.Integer">
+              <value>47</value>
+          </constructor-arg>
+      </bean>
+      <bean id="user5" class="com.jason.SpringZk.Users">
+          <constructor-arg type="java.lang.String">
+              <value>EE</value>
+          </constructor-arg>
+          <constructor-arg type="java.lang.Integer">
+              <value>7</value>
+          </constructor-arg>
+      </bean>
+      <bean id="user6" class="com.jason.SpringZk.Users">
+          <constructor-arg type="java.lang.String">
+              <value>FF</value>
+          </constructor-arg>
+          <constructor-arg type="java.lang.Integer">
+              <value>87</value>
+          </constructor-arg>
+      </bean>
+      <bean id="user7" class="com.jason.SpringZk.Users">
+          <constructor-arg type="java.lang.String">
+              <value>GG</value>
+          </constructor-arg>
+          <constructor-arg type="java.lang.Integer">
+              <value>99</value>
+          </constructor-arg>
+      </bean>
+      <bean id="user8" class="com.jason.SpringZk.Users">
+          <constructor-arg type="java.lang.String">
+              <value>HH</value>
+          </constructor-arg>
+          <constructor-arg type="java.lang.Integer">
+              <value>56</value>
           </constructor-arg>
       </bean>
     

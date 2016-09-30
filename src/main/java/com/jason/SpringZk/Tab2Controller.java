@@ -11,6 +11,8 @@ import org.zkoss.zul.Label;
 import org.zkoss.zul.ListModel;
 import org.zkoss.zul.ListModelList;
 import org.zkoss.zul.Listbox;
+import org.zkoss.zul.Listcell;
+import org.zkoss.zul.Listitem;
 
 
 public class Tab2Controller extends SelectorComposer<Component>{
@@ -22,7 +24,6 @@ public class Tab2Controller extends SelectorComposer<Component>{
 	private Calendar cal;
 	@Wire
 	private Hlayout h1;
-	private ListModel<Users> listbox;
 	@Wire
 	private Listbox mylb;
 	
@@ -39,11 +40,11 @@ public class Tab2Controller extends SelectorComposer<Component>{
 		
 		cal.setWeekOfYear(true);
 		
-		listbox = new ListModelList<Users>(mytab2.getUsersArray());
-		
 		for (Users aUsers : mytab2.getUsersArray()) {
-			System.out.println(aUsers.getName() +" "+ aUsers.getAge());
-			
+			Listitem listitem = new Listitem();
+			new Listcell(aUsers.getName()).setParent(listitem);
+			new Listcell(aUsers.getAge().toString()).setParent(listitem);
+			listitem.setParent(mylb);
 		}
 		
 	}
