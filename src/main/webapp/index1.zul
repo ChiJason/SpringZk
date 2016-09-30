@@ -17,14 +17,6 @@
 			<listheader label="name" align="center" sort="auto" />
 			<listheader label="age" align="center" sort="auto"/>
 		</listhead>
-		<listfoot>
-            <listfooter>
-                <label value="String" />
-            </listfooter>
-            <listfooter>
-                <label value="Integer" />
-            </listfooter>
-        </listfoot>
 	</listbox>
 </hlayout>
 
