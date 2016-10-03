@@ -8,6 +8,10 @@ public class Tab2 {
 	private Date date;
 	private Users[] usersArray;
 	
+	public Tab2(){
+		
+	}
+	
 	public Tab2(String message){
 		this.tb2Message = message;
 	}

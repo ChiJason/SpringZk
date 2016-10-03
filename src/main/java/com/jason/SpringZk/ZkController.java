@@ -1,5 +1,7 @@
 package com.jason.SpringZk;
 
+import java.io.File;
+
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.zkoss.zk.ui.Component;
@@ -12,6 +14,8 @@ import org.zkoss.zul.Include;
 import org.zkoss.zul.Intbox;
 import org.zkoss.zul.Label;
 import org.zkoss.zul.Window;
+
+import com.fasterxml.jackson.databind.ObjectMapper;
 
 
 public class ZkController extends SelectorComposer<Component> {
@@ -39,6 +43,7 @@ public class ZkController extends SelectorComposer<Component> {
 		sayHello = (SayHello) context.getBean("sayHello");
 		count = sayHello.getCount();
 		sayhi.setValue(sayHello.getMessage());
+		
 		
 	}
 	
